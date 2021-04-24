@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <h1>Welcome to the Coding Quiz</h1>
+    <div id="Start">
+    <button onclick="startquiz()">Start</button>
+    </div>
+    <h1 id="timer">Timer:75</h1>
+    <div class="hidden">
+    <p style="display:none;" class="questions" id="question1">
+        1. Hello 
+    <input type="radio" name="answer1" value="wrong">Hey
+    <input type="radio" name="answer1" value="correct">Hey
+    <input type="radio" name="answer1" value="wrong">Hey
+    <input type="radio" name="answer1" value="wrong">Hey
+    <button onclick="submit1()">Submit</button>
+    </p>
+    <hr>
+    <p style="display:none;" class="questions" id="question2">
+        2. Hello 
+    <input type="radio" name="answer2" value="wrong">Hey
+    <input type="radio" name="answer2" value="wrong">Hey
+    <input type="radio" name="answer2" value="correct">Hey
+    <input type="radio" name="answer2" value="wrong">Hey
+    <button onclick="submit2()">Submit</button>
+    </p>
+    <p style="display:none;" class="questions" id="question3">
+        3. Hello 
+    <input type="radio" name="answer3" value="wrong">Hey
+    <input type="radio" name="answer3" value="wrong">Hey
+    <input type="radio" name="answer3" value="correct">Hey
+    <input type="radio" name="answer3" value="wrong">Hey
+    <button onclick="submit3()">Submit</button>
+    </p>
+    <p style="display:none;" class="questions" id="question4">
+        4. Hello 
+    <input type="radio" name="answer4" value="wrong">Hey
+    <input type="radio" name="answer4" value="wrong">Hey
+    <input type="radio" name="answer4" value="correct">Hey
+    <input type="radio" name="answer4" value="wrong">Hey
+    <button onclick="submit4()">Submit</button>
+    </p>
+    <p style="display:none;" class="questions" id="question5">
+        5. Hello 
+    <input type="radio" name="answer5" value="wrong">Hey
+    <input type="radio" name="answer5" value="wrong">Hey
+    <input type="radio" name="answer5" value="correct">Hey
+    <input type="radio" name="answer5" value="wrong">Hey
+    <button onclick="submit5()">Submit</button>
+    </p>
+    <p style="display:none;" id="finished">
+        Thank you for playing!
+        <br>
+        <button onclick="reset()">Reset Quiz</button>
+        <button>View Score</button>
+    </p>
+    </div>
+    <hr>
+</body>
+<script src="script2.js"></script>
+</html>
