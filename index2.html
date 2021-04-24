@@ -15,52 +15,54 @@
     <h1 id="timer">Timer:75</h1>
     <div class="hidden">
     <p style="display:none;" class="questions" id="question1">
-        1. Hello 
-    <input type="radio" name="answer1" value="wrong">Hey
-    <input type="radio" name="answer1" value="correct">Hey
-    <input type="radio" name="answer1" value="wrong">Hey
-    <input type="radio" name="answer1" value="wrong">Hey
+        1. Commonly used Data Types do not include:
+    <input id="q1" type="radio" name="answer" value="wrong">Strings
+    <input id="q1" type="radio" name="answer1" value="correct">Alerts
+    <input id="q1" type="radio" name="answer" value="wrong">Numbers
+    <input id="q1" type="radio" name="answer" value="wrong">Booleans
     <button onclick="submit1()">Submit</button>
     </p>
     <hr>
     <p style="display:none;" class="questions" id="question2">
-        2. Hello 
-    <input type="radio" name="answer2" value="wrong">Hey
-    <input type="radio" name="answer2" value="wrong">Hey
-    <input type="radio" name="answer2" value="correct">Hey
-    <input type="radio" name="answer2" value="wrong">Hey
+        2. The condition in an if/else statement is enclosed within ____.
+    <input type="radio" name="answer" value="wrong">Quotes
+    <input type="radio" name="answer" value="wrong">Parenthesis
+    <input type="radio" name="answer2" value="correct">Curly Brackets
+    <input type="radio" name="answer" value="wrong">Square Brackets
     <button onclick="submit2()">Submit</button>
     </p>
     <p style="display:none;" class="questions" id="question3">
-        3. Hello 
-    <input type="radio" name="answer3" value="wrong">Hey
-    <input type="radio" name="answer3" value="wrong">Hey
-    <input type="radio" name="answer3" value="correct">Hey
-    <input type="radio" name="answer3" value="wrong">Hey
+        3. Arrays in JavaScript can be used to store _____. 
+    <input type="radio" name="answer" value="wrong">Numbers and Strings
+    <input type="radio" name="answer" value="wrong">Other Arrays
+    <input type="radio" name="answer" value="wrong">Booleans
+    <input type="radio" name="answer3" value="correct">All of the Above
     <button onclick="submit3()">Submit</button>
     </p>
     <p style="display:none;" class="questions" id="question4">
-        4. Hello 
-    <input type="radio" name="answer4" value="wrong">Hey
-    <input type="radio" name="answer4" value="wrong">Hey
-    <input type="radio" name="answer4" value="correct">Hey
-    <input type="radio" name="answer4" value="wrong">Hey
+        4. String values must be enclosed within ______ when being assigned to variables.
+    <input type="radio" name="answer" value="wrong">Commas
+    <input type="radio" name="answer" value="wrong">Curly Brackets
+    <input type="radio" name="answer4" value="correct">Quotes
+    <input type="radio" name="answer" value="wrong">Parenthesis
     <button onclick="submit4()">Submit</button>
     </p>
     <p style="display:none;" class="questions" id="question5">
-        5. Hello 
-    <input type="radio" name="answer5" value="wrong">Hey
-    <input type="radio" name="answer5" value="wrong">Hey
-    <input type="radio" name="answer5" value="correct">Hey
-    <input type="radio" name="answer5" value="wrong">Hey
-    <button onclick="submit5()">Submit</button>
+        5. A very useful tool used during development and debugging for printing content to the degugger is: 
+    <input type="radio" name="answer" value="wrong">JavaScript
+    <input type="radio" name="answer" value="wrong">Terminal/Bash
+    <input type="radio" name="answer5" value="correct">Console.log
+    <input type="radio" name="answer" value="wrong">For loops
+    <button id="submit5" onclick="submit5()">Submit</button>
     </p>
-    <p style="display:none;" id="finished">
+    <div style="display:none;" id="finished">
         Thank you for playing!
+        <p id="Score">Score:</p>
+        <form>Initials:</form>
         <br>
         <button onclick="reset()">Reset Quiz</button>
         <button>View Score</button>
-    </p>
+    </div>
     </div>
     <hr>
 </body>
