@@ -8,7 +8,7 @@ function startquiz() {
         document.getElementById("timer").innerHTML = --c;
        if (c == 0) {
            clearInterval(myTimer);
-           document.getElementById("timeup");
+           alert("Game Over, Try Again");
         } 
    }
 
@@ -71,6 +71,11 @@ function submit5() {
 }
 
 function reset() {
+    myTimer = setInterval(myClock, 1000)
+    function myClock() {
+        document.getElementsByName("timer").innerHTML;
+        c = 75;
+    }
     document.getElementById("Start").style.display="flex";
     document.getElementById("timer").style.display="block";
     document.getElementById("finished").style.display="none";
